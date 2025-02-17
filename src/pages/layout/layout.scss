@@ -1,6 +1,6 @@
 .layout{
    display: grid;
-   width: 100%;
+   //overflow-x: hidden;
    .l_menu{
       place-self: center;
       display: flex;
@@ -9,7 +9,7 @@
       padding: 0 20px;
       height: 40px;
       gap: calc(var(--gap) * 3);
-      position: sticky;
+      position: fixed;
       top: calc(var(--height_menu_bar) / 2.5);
       opacity: 0;
       transition: opacity 0.3s ease;
@@ -20,6 +20,12 @@
       border-radius: 10px;
       box-sizing: content-box;
       border: solid 1px rgb(128, 128, 128, 0.2);
+      @media screen and (max-width : 425px) {
+         width: 100%;
+         top: 0;
+         gap: calc(var(--gap) * 2);
+         border-radius: unset;
+     }
       &.show{
          opacity: 1;
          & > li {

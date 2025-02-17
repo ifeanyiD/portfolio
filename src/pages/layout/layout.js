@@ -12,20 +12,22 @@ function Layout () {
 
   useEffect(() => {
     const menuId = document.getElementById("l_menu")
-    const scrollMonitor = window.addEventListener("scroll", 
-      ()=>{
-        if(window.scrollY > 150){
-
-          return menuId?.classList.add("show")
-
-        }
-         menuId.classList?.remove("show")
-      })
+    const scrollMonitor = ()=>{
+      if(window.scrollY > 150){
+  
+        return menuId?.classList.add("show")
+  
+      }
+       menuId.classList?.remove("show")
+    }
+    window.addEventListener("scroll",scrollMonitor)
     return () => {
       window.removeEventListener("scroll", scrollMonitor)
     };
     
   }, []);
+
+  
 
   useEffect(() => {
     root.current = document.getElementById("layout").querySelector(".root");
@@ -45,7 +47,6 @@ function Layout () {
                     {res.title}
                   </li>)
         }
-        
       </ul>
       <Outlet/>
     </div>
