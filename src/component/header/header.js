@@ -57,7 +57,6 @@ function Header () {
                     }
                 </ul>
             </Portal>
-            <div className='menuGap'></div>
             <div id='menu' className="menu" >
                 <div id="clicker"  className='clicker' onClick={(e)=>menu(e)}></div>
                 <span></span>

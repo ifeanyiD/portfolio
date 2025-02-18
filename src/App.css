@@ -10,7 +10,7 @@
   --color1 : 15 23 42;
   --color2 : 148 163 184;
   --page_padding : 100px;
-  --height_menu_bar : 70px;
+  --height_menu_bar : 60px;
   --bg_color : rgb(var(--color1));
   --text_color : rgb(var(--color2));
   --link_color : 255, 105, 180;

@@ -33,15 +33,14 @@ const {setCurrentNav} =  useNav();
   
   return (
     <div className='root' id='scrollParent'>
-    {/* <button onClick={()=> scrollSpy( null, document.querySelectorAll("section")[0])}>click me</button> */}
         <section data-section = "about">
             <div>
                 <div>
-                  <h1>Web Developer &</h1>
-                  <h1>Designer</h1>
+                  <h1>Web Developer & Designer</h1>
                 </div>
               
-                <p>I bring together the visual aspect of website with its functional elements to 
+                <p>
+                  I bring together the of website with its functional elements to 
                   create a seamless user experience
                 </p>
                 <button className={"cv"}>Download CV</button>
@@ -70,7 +69,7 @@ const {setCurrentNav} =  useNav();
                       <GiRapidshareArrow color='rgb(131, 23, 238, 0.6)' fontSize={"1.3em"}/>
                       <h4>RESTful api</h4>  
                     </div>
-                    <p>I create website</p>
+                    <p>I build website with RESTAPI to access web services in a simple and flexible way</p>
                 </div>
             </div>
         </section>

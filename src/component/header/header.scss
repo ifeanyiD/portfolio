@@ -18,9 +18,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        .menuGap{
-            width: 100px;
-        }
+        
         .menu{
             --menu_right_position : 20%;
             display: grid;
@@ -53,7 +51,10 @@
                 cursor: pointer;
                 transform: rotate(90deg);
                 padding: 15px 10px;
-                
+                z-index: 1;
+                @media screen and (max-width : 425px) {
+                    top: 25%;
+                }
                 & > span{
                     width: 10px;
                     height: 2px;
