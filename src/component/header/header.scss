@@ -25,7 +25,7 @@
             position: fixed;
             right: calc( var(--menu_right_position) / 2);
             @media screen and (max-width : 767px) {
-                --menu_right_position : 5%
+                --menu_right_position : 3px
             }
             padding: 10px 15px;
             gap: 5px;
@@ -53,7 +53,7 @@
                 padding: 15px 10px;
                 z-index: 1;
                 @media screen and (max-width : 425px) {
-                    top: 25%;
+                    bottom: 5%;
                 }
                 & > span{
                     width: 10px;
